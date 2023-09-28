@@ -1,9 +1,12 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Navbar from "@/components/layouts/Navbar";
+import { Poppins } from "next/font/google";
+import NextUIProviderWrapper from "@/providers/NextUIProviderWrapper";
+import ToggleButtonProvider from "@/contexts/ToggleButton";
+import Nav from "@/components/layouts/Nav";
+import clsx from "clsx";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Poppins({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,11 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main className="container flex flex-col min-h-screen w-full mx-auto ">
-          <Navbar />
-          {children}
-        </main>
+      <body className={clsx(font.className, " bg-slate-50 dark:bg-gray-900")}>
+        <ToggleButtonProvider>
+          <NextUIProviderWrapper>
+            <main className="container flex flex-col min-h-screen w-full mx-auto relative">
+              <Nav />
+              {children}
+            </main>
+          </NextUIProviderWrapper>
+        </ToggleButtonProvider>
       </body>
     </html>
   );

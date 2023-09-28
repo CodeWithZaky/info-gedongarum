@@ -10,29 +10,50 @@ import "./Carousel.css";
 
 // import required modules
 import { EffectCards } from "swiper/modules";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function App() {
   return (
-    <div className="w-[50%] relative">
+    <div className="w-full md:w-[50%] relative">
       <Swiper
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>
-          <div className="flex flex-col">
+          <Image
+            src="https://source.unsplash.com/600x600"
+            alt="image"
+            width={400}
+            height={400}
+            objectFit="cover"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            src="https://source.unsplash.com/400x400"
+            alt="image"
+            width={400}
+            height={400}
+            objectFit="cover"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            src="https://source.unsplash.com/500x500"
+            alt="image"
+            width={400}
+            height={400}
+            objectFit="cover"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link href="/galeri" className="flex flex-col">
             <p>Go to</p>
-            <p>Galeri</p>
-          </div>
+            <p className="underline">Galeri</p>
+          </Link>
         </SwiperSlide>
       </Swiper>
     </div>

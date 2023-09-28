@@ -1,24 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import DarkModeSwitcher from "../elements/DarkModeSwitcher";
+import Hamburger from "../elements/Hamburger";
+import { navLinks } from "../datas/Navlinks";
 
-const navLinks = [
-  {
-    name: "Beranda",
-    link: "/",
-  },
-  {
-    name: "Profil",
-    link: "/profil",
-  },
-  {
-    name: "galeri",
-    link: "/galeri",
-  },
-];
-
-const navbar = () => {
+const Topbar = () => {
   return (
-    <nav className="w-full flex justify-between bg-slate-50 border-b border-slate-300 mx-auto px-5 py-3">
+    <nav className="w-full flex justify-between border-b border-slate-300 dark:border-slate-700 mx-auto px-5 py-4 mb-5">
       <div>
         <a
           className="pointer-events-none flex place-items-center gap-2 lg:pointer-events-auto lg:p-0"
@@ -37,14 +25,20 @@ const navbar = () => {
         </a>
       </div>
       <ul className="flex justify-center items-center gap-7">
+        <DarkModeSwitcher />
         {navLinks.map((link) => (
-          <Link key={link.name} href={link.link}>
+          <Link
+            key={link.name}
+            href={link.link}
+            className="dark:text-slate-100 hidden md:block"
+          >
             {link.name}
           </Link>
         ))}
+        <Hamburger />
       </ul>
     </nav>
   );
 };
 
-export default navbar;
+export default Topbar;
