@@ -12,7 +12,3 @@
   font-weight: bold;
   color: #fff;
 }
-
-.swiper-slide:nth-child(4n) {
-  background-color: rgb(58, 58, 58);
-}

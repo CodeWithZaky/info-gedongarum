@@ -1,4 +1,4 @@
-import Carousel from "@/components/fragments/Carousel";
+import Carousel from "@/src/components/banner/Carousel";
 
 const Banner = () => {
   return (
@@ -14,17 +14,17 @@ export default Banner;
 const Intro = () => {
   return (
     <div className="w-full md:w-[50%] px-10 flex flex-col gap-5 font-semibold">
-      <p className="text-3xl text-gray-700 dark:text-slate-300">
+      <p className="text-3xl text-foreground dark:text-foreground">
         Selamat datang di Gedongarum
       </p>
-      <p className="text-gray-500 dark:text-slate-500">
+      <p className="text-muted-foreground/90 dark:text-muted-foreground/90">
         Kami membawa kepada Anda keindahan dan keajaiban Gedongarum melalui
         kata-kata dan pengalaman yang luar biasa. Mari ikuti kami dalam
         perjalanan untuk mengeksplorasi kekayaan dan pesona tempat ini. Kami
         akan membawa Anda lebih dekat dengan keajaiban alam, sejarah yang
         memikat, dan semua yang membuat Gedongarum begitu istimewa.
       </p>
-      <p className="text-xl text-gray-600 dark:text-slate-400">
+      <p className="text-xl text-muted-foreground/95 dark:text-foreground/95">
         Selamat membaca dan temukan lebih banyak tentang Gedongarum.
       </p>
     </div>

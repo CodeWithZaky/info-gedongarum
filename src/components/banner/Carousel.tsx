@@ -49,10 +49,10 @@ export default function App() {
             objectFit="cover"
           />
         </SwiperSlide>
-        <SwiperSlide>
-          <Link href="/galeri" className="flex flex-col">
+        <SwiperSlide className="bg-card dark:bg-card shadow-sm shadow-muted-foreground">
+          <Link href="/galeri" className="flex flex-col text-muted-foreground">
             <p>Go to</p>
-            <p className="underline">Galeri</p>
+            <p className="underline text-foreground">Galeri</p>
           </Link>
         </SwiperSlide>
       </Swiper>

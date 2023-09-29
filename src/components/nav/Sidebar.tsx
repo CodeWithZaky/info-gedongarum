@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import DarkModeSwitcher from "../elements/DarkModeSwitcher";
-import { navLinks } from "../datas/Navlinks";
+import { navLinks } from "./Navlinks";
 import clsx from "clsx";
 import { useContext } from "react";
 import { ToggleContext } from "@/contexts/ToggleButton";
 import { IoClose } from "react-icons/io5";
+import { MenuTheme } from "../button/MenuTheme";
 
 const Sidebar = () => {
   const { isToggled, toggleFn } = useContext(ToggleContext);
@@ -45,7 +45,7 @@ const Sidebar = () => {
           />
         </div>
         <ul className="flex flex-col justify-start items-end gap-7">
-          <DarkModeSwitcher />
+          <MenuTheme />
           {navLinks.map((link) => (
             <Link
               key={link.name}

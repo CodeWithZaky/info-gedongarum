@@ -1,12 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import DarkModeSwitcher from "../elements/DarkModeSwitcher";
-import Hamburger from "../elements/Hamburger";
-import { navLinks } from "../datas/Navlinks";
+import Hamburger from "../button/Hamburger";
+import { navLinks } from "./Navlinks";
+import { MenuTheme } from "../button/MenuTheme";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 const Topbar = () => {
+  const pathname = usePathname();
+
   return (
-    <nav className="w-full flex justify-between border-b border-slate-300 dark:border-slate-700 mx-auto px-5 py-4 mb-5">
+    <nav className="w-full flex justify-between border-b border-border mx-auto px-5 py-4 mb-5">
       <div>
         <a
           className="pointer-events-none flex place-items-center gap-2 lg:pointer-events-auto lg:p-0"
@@ -25,12 +30,17 @@ const Topbar = () => {
         </a>
       </div>
       <ul className="flex justify-center items-center gap-7">
-        <DarkModeSwitcher />
+        <MenuTheme />
         {navLinks.map((link) => (
           <Link
             key={link.name}
             href={link.link}
-            className="dark:text-slate-100 hidden md:block"
+            className={clsx(
+              pathname === link.link
+                ? "text-foreground dark:text-foreground"
+                : "text-muted-foreground dark:text-muted-foreground",
+              "hidden md:block"
+            )}
           >
             {link.name}
           </Link>
