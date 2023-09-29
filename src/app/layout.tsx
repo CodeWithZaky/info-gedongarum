@@ -1,10 +1,9 @@
-import "../styles/globals.css";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import NextUIProviderWrapper from "@/providers/NextUIProviderWrapper";
-import ToggleButtonProvider from "@/contexts/ToggleButton";
-import Nav from "@/components/layouts/Nav";
 import clsx from "clsx";
+import AppMainProvider from "@/providers/AppMainProvider";
+import Nav from "@/components/nav";
 
 const font = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -20,15 +19,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx(font.className, " bg-slate-50 dark:bg-gray-900")}>
-        <ToggleButtonProvider>
-          <NextUIProviderWrapper>
-            <main className="container flex flex-col min-h-screen w-full mx-auto relative">
-              <Nav />
-              {children}
-            </main>
-          </NextUIProviderWrapper>
-        </ToggleButtonProvider>
+      <body
+        className={clsx(
+          font.className,
+          "bg-background dark:bg-background scroll-smooth"
+        )}
+      >
+        <AppMainProvider>
+          <main className="container flex flex-col min-h-screen w-full mx-auto relative">
+            <Nav />
+            {children}
+          </main>
+        </AppMainProvider>
       </body>
     </html>
   );
