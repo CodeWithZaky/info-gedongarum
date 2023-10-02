@@ -4,11 +4,11 @@ import { useContext } from "react";
 import { MdOutlineMenu } from "react-icons/md";
 
 const Hamburger = () => {
-  const { toggleFn } = useContext(ToggleContext);
+  const { toggle } = useContext(ToggleContext);
   return (
     <div className="md:hidden flex cursor-pointer">
       <MdOutlineMenu
-        onClick={toggleFn}
+        onClick={toggle}
         className="text-4xl dark:text-slate-300"
       />
     </div>

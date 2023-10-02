@@ -1,25 +1,22 @@
 "use client";
+import { createContext, useState, FC, ReactNode } from "react";
 
-import { createContext, useState } from "react";
-
-interface ToggleType {
+interface ToggleContextType {
   isToggled: boolean;
-  toggleFn: () => void;
+  toggle: () => void;
 }
 
-const ToggleContext = createContext<ToggleType>({} as ToggleType);
+const ToggleContext = createContext<ToggleContextType>({} as ToggleContextType);
 
-const ToggleButtonProvider = ({ children }: { children: React.ReactNode }) => {
+const ToggleButtonProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [isToggled, setIsToggled] = useState(false);
-  const toggleFn = () => {
-    setIsToggled(!isToggled);
-  };
+  const toggle = () => setIsToggled((prevIsToggled) => !prevIsToggled);
+
   return (
-    <ToggleContext.Provider value={{ isToggled, toggleFn }}>
+    <ToggleContext.Provider value={{ isToggled, toggle }}>
       {children}
     </ToggleContext.Provider>
   );
 };
 
-export default ToggleButtonProvider;
-export { ToggleContext };
+export { ToggleButtonProvider, ToggleContext };
