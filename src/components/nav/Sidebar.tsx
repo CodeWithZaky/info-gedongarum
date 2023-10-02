@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { navLinks } from "./Navlinks";
 import clsx from "clsx";
-import { useContext } from "react";
-import { ToggleContext } from "@/contexts/ToggleButton";
 import { IoClose } from "react-icons/io5";
 import { MenuTheme } from "../button/MenuTheme";
+import { useContext } from "react";
+import { ToggleContext } from "@/src/contexts/ToggleButton";
 
 const Sidebar = () => {
-  const { isToggled, toggleFn } = useContext(ToggleContext);
+  const { isToggled, toggle } = useContext(ToggleContext);
 
   return (
     <nav
@@ -19,7 +19,7 @@ const Sidebar = () => {
       )}
     >
       <div
-        onClick={toggleFn}
+        onClick={toggle}
         className="w-[50%] backdrop-blur-sm h-full cursor-pointer"
       />
       <div className="w-[50%] h-full flex flex-col dark:bg-slate-900 bg-slate-100 gap-5 p-5">
@@ -40,7 +40,7 @@ const Sidebar = () => {
             />
           </a>
           <IoClose
-            onClick={toggleFn}
+            onClick={toggle}
             className="text-4xl dark:text-slate-100 cursor-pointer"
           />
         </div>
