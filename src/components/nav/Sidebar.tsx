@@ -15,14 +15,14 @@ const Sidebar = () => {
     <nav
       className={clsx(
         isToggled ? "w-full" : "w-[0px]",
-        "transition-all duration-300 h-screen fixed flex top-0 right-0 z-20 md:hidden overflow-hidden bg-slate-950/50 "
+        "transition-all duration-300 h-screen fixed flex top-0 right-0 z-20 md:hidden overflow-hidden bg-background/50"
       )}
     >
       <div
         onClick={toggle}
-        className="w-[50%] backdrop-blur-sm h-full cursor-pointer"
+        className="w-[50%] backdrop-blur-sm h-full cursor-pointer bg-black/5"
       />
-      <div className="w-[50%] h-full flex flex-col dark:bg-slate-900 bg-slate-100 gap-5 p-5">
+      <div className="w-[50%] h-full flex flex-col dark:bg-background bg-background gap-5 p-5 border-l border-border/50">
         <div className="flex justify-between items-center w-full">
           <a
             className="pointer-events-none flex place-items-center gap-2 lg:pointer-events-auto lg:p-0"

@@ -31,6 +31,10 @@ export const VilData: { title: string; list: string[] }[] = [
   },
   {
     title: "Potensi",
-    list: ["Bidang Pertanian", "Bidang Pangan", "Bidang Peternakan/Perikanan"],
+    list: [
+      "Bidang Pertanian",
+      "Bidang Pangan",
+      "Bidang Peternakan atau Perikanan",
+    ],
   },
 ];

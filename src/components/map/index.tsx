@@ -1,6 +1,6 @@
 const index = () => {
   return (
-    <div className="relative w-full h-96 my-10">
+    <div className="relative w-full h-96 my-10 px-5">
       <iframe
         className="rounded-lg"
         width="100%"
