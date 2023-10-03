@@ -24,7 +24,7 @@ const Intro = () => {
         akan membawa Anda lebih dekat dengan keajaiban alam, sejarah yang
         memikat, dan semua yang membuat Gedongarum begitu istimewa.
       </p>
-      <p className="text-xl text-muted-foreground/95 dark:text-foreground/95">
+      <p className="text-xl text-foreground/80 dark:text-foreground/95">
         Selamat membaca dan temukan lebih banyak tentang Gedongarum.
       </p>
     </div>
