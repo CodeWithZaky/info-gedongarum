@@ -6,53 +6,56 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 
-import "./Carousel.css";
-
 // import required modules
 import { EffectCards } from "swiper/modules";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function App() {
+  const [swipperSlideCss] = useState(
+    "flex items-center justify-center rounded-lg h-full"
+  );
+
   return (
-    <div className="w-full md:w-[50%] relative">
+    <div className="hidden md:block w-full md:w-[50%] relative">
       <Swiper
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="mySwiper"
+        className="mySwiper md:w-[320px] md:h-[350px]"
       >
-        <SwiperSlide>
+        <SwiperSlide className={swipperSlideCss}>
           <Image
             src="https://source.unsplash.com/600x600"
             alt="image"
-            width={400}
-            height={400}
+            fill
             objectFit="cover"
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={swipperSlideCss}>
           <Image
             src="https://source.unsplash.com/400x400"
             alt="image"
-            width={400}
-            height={400}
+            fill
             objectFit="cover"
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={swipperSlideCss}>
           <Image
-            src="https://source.unsplash.com/500x500"
+            src="https://source.unsplash.com/700x700"
             alt="image"
-            width={400}
-            height={400}
+            fill
             objectFit="cover"
           />
         </SwiperSlide>
-        <SwiperSlide className="bg-card dark:bg-card shadow-sm shadow-muted-foreground">
-          <Link href="/galeri" className="flex flex-col text-muted-foreground">
+        <SwiperSlide className="bg-card dark:bg-card shadow-sm shadow-muted-foreground flex items-center justify-center rounded-lg">
+          <Link
+            href="/galeri"
+            className="flex flex-col justify-center items-center h-full text-muted-foreground"
+          >
             <p>Go to</p>
-            <p className="underline text-foreground">Galeri</p>
+            <p className="underline dark:text-foreground">Galeri</p>
           </Link>
         </SwiperSlide>
       </Swiper>
