@@ -26,7 +26,7 @@ export default function RootLayout({
         )}
       >
         <AppMainProvider>
-          <main className="container flex flex-col min-h-screen w-full mx-auto relative">
+          <main className="container-none md:container flex flex-col min-h-screen w-full mx-auto relative">
             <Nav />
             {children}
           </main>
