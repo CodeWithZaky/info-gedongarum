@@ -7,7 +7,7 @@ export default function CardVil() {
   return (
     <>
       {VilData.map((item, index) => (
-        <Card className="w-1/3 border border-border" key={index}>
+        <Card className="w-full md:w-1/3 border border-border" key={index}>
           <CardHeader className="border-b border-separate">
             <CardTitle>{item.title}</CardTitle>
             {/* <CardDescription>
@@ -15,7 +15,7 @@ export default function CardVil() {
    </CardDescription> */}
           </CardHeader>
           <CardContent>
-            <ul className="list-disc list-outside marker:text-primary dark:text-muted-foreground p-5 wrap">
+            <ul className="list-disc list-outside marker:text-primary dark:text-muted-foreground pl-5 py-5 wrap">
               {item.list.map((item, index) => (
                 <li key={index} className="text-md">
                   {item}
