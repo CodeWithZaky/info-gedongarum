@@ -17,14 +17,14 @@ const Intro = () => {
       <p className="text-3xl text-foreground dark:text-foreground">
         Selamat datang di Gedongarum
       </p>
-      <p className="text-muted-foreground/90 dark:text-muted-foreground/90">
+      <p className="text-muted-foreground dark:text-muted-foreground">
         Kami membawa kepada Anda keindahan dan keajaiban Gedongarum melalui
         kata-kata dan pengalaman yang luar biasa. Mari ikuti kami dalam
         perjalanan untuk mengeksplorasi kekayaan dan pesona tempat ini. Kami
         akan membawa Anda lebih dekat dengan keajaiban alam, sejarah yang
         memikat, dan semua yang membuat Gedongarum begitu istimewa.
       </p>
-      <p className="text-xl text-foreground/80 dark:text-foreground/95">
+      <p className="text-xl text-foreground/80 dark:text-foreground/80">
         Selamat membaca dan temukan lebih banyak tentang Gedongarum.
       </p>
     </div>
