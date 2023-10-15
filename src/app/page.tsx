@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex w-full h-auto flex-col md:flex-row justify-evenly px-10 my-10 gap-3 items-stretch">
         <CardVil />
       </div>
-      <GaleryGrid />
+      <GaleryGrid itemsPerPage={12} />
       <Map />
       <Footer />
     </main>
