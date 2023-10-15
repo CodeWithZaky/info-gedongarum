@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-const GaleryGrid = () => {
+const GaleryGrid = ({ itemsPerPage }: { itemsPerPage: number }) => {
   return (
     <div className="columns-2 sm:columns-2 md:columns-3 lg:columns-4 px-5 my-10">
-      {[...Array(12)].map((_, i) => (
+      {[...Array(itemsPerPage)].map((_, i) => (
         <div
           key={i}
           className="relative mb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20"
