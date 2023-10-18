@@ -18,11 +18,11 @@ const Footer = () => {
               </svg>
               DESA GEDONGARUM
             </h6>
-            <p className="text-muted-foreground dark:text-muted-foreground">
+            <p className="text-muted-foreground dark:text-muted-foreground text-xs sm:text-base">
               Jl. Raya Gedongarum No. 107 Kecamatan Kanor Kabupaten Bojonegoro
               Provinsi Jawa Timur Kode Pos 62193
             </p>
-            <p className="mt-3 text-muted-foreground dark:text-muted-foreground">
+            <p className="mt-3 text-muted-foreground dark:text-muted-foreground text-xs sm:text-base">
               Email: desagedongarum@gmail.com
             </p>
           </div>
