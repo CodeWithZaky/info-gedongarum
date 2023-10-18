@@ -12,23 +12,13 @@ const Topbar = () => {
 
   return (
     <nav className="w-full flex justify-between border-b border-border mx-auto px-5 py-4 mb-5">
-      <div>
-        <a
-          className="pointer-events-none flex place-items-center gap-2 lg:pointer-events-auto lg:p-0"
-          href="https://azaku.vercel.app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/vercel.svg"
-            alt="Vercel Logo"
-            className="dark:invert"
-            width={100}
-            height={24}
-            priority
-          />
-        </a>
-      </div>
+      <a
+        href="https://www.google.com/search?q=Desa+Gedongarum%2C+Kecamatan+Kanor%2C+Kabupaten+Bojonegoro%2C+Jawa+Timur%2C+Indonesia&sca_esv=574419571&rlz=1C1KNTJ_enID1078ID1078&sxsrf=AM9HkKn-jMCqUctmah0TcBLyJuB35_ODwg%3A1697627440384&ei=ML0vZYqOF_mnseMP1YiBkAg&ved=0ahUKEwiK5q2Eu_-BAxX5U2wGHVVEAIIQ4dUDCBA&uact=5&oq=Desa+Gedongarum%2C+Kecamatan+Kanor%2C+Kabupaten+Bojonegoro%2C+Jawa+Timur%2C+Indonesia&gs_lp=Egxnd3Mtd2l6LXNlcnAiTURlc2EgR2Vkb25nYXJ1bSwgS2VjYW1hdGFuIEthbm9yLCBLYWJ1cGF0ZW4gQm9qb25lZ29ybywgSmF3YSBUaW11ciwgSW5kb25lc2lhMgoQIRigARjDBBgKSJ3FAlDkB1ibrgJwBXgAkAEBmAG-AqABxRmqAQgwLjE4LjIuMbgBA8gBAPgBAcICBxAjGLACGCfCAgIQJsICBRAAGKIE4gMEGAEgQYgGAQ&sclient=gws-wiz-serp"
+        target="_blank"
+        className="border border-border hover:bg-card cursor-pointer py-1 px-2 rounded-md flex justify-center items-center text-xl text-foreground dark:text-foreground"
+      >
+        GEDONGARUM
+      </a>
       <ul className="flex justify-center items-center gap-7">
         <MenuTheme />
         {navLinks.map((link) => (
