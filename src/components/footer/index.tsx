@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-center text-neutral-600 bg-muted dark:bg-card dark:text-foreground lg:text-left mt-10 mx-5">
+    <footer className="text-center border border-border text-neutral-600 bg-secondary dark:bg-card dark:text-foreground lg:text-left mt-10 mx-5 rounded-t-xl">
       <div className="mx-6 py-10 text-center md:text-left">
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-start justify-items-center">
           <div className="flex flex-col">
@@ -86,17 +86,26 @@ const Footer = () => {
                 Pengembang
               </a>
             </p>
+            <p className="mb-4">
+              <a
+                href="https://www.youtube.com/watch?v=kaDVVpuRsjw&ab_channel=pemdesgedongarum"
+                target="_blank"
+                className="text-muted-foreground dark:text-muted-foreground"
+              >
+                youtube
+              </a>
+            </p>
           </div>
         </div>
       </div>
 
-      <div className=" p-6 text-center bg-muted dark:bg-background/40 dark:text-muted-foreground">
-        <span>© 2023 Copyright:</span>
+      <div className=" p-6 text-center dark:text-muted-foreground">
+        <span>{"©2023 "}</span>
         <a
           className="font-semibold text-muted-foreground dark:text-muted-foreground"
           href="https://tailwind-elements.com/"
         >
-          Ahmad Zaky Ubaidillah
+          InfoGedongarum
         </a>
       </div>
     </footer>

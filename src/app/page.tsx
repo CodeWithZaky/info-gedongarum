@@ -3,6 +3,8 @@ import CardVil from "@/src/components/card/CardVil";
 import GaleryGrid from "@/src/components/galery/GaleryGrid";
 import Footer from "@/src/components/footer";
 import Map from "@/components/map";
+import { imageData } from "../components/galery/ImageData";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,7 +13,19 @@ export default function Home() {
       <div className="flex w-full h-auto flex-col md:flex-row justify-evenly px-10 my-10 gap-3 items-stretch">
         <CardVil />
       </div>
-      <GaleryGrid itemsPerPage={12} />
+      <div>
+        <GaleryGrid>
+          {imageData.slice(0, 6).map((image, index) => (
+            <div key={index}>{image}</div>
+          ))}
+        </GaleryGrid>
+        <Link
+          href={"/galeri"}
+          className="mx-5 bg-primary hover:bg-primary/90 hover:text-white w-fit px-3 py-1 rounded-xl cursor-pointer"
+        >
+          {"foto lainnya >"}
+        </Link>
+      </div>
       <Map />
       <Footer />
     </main>

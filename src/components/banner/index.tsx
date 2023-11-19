@@ -1,4 +1,5 @@
 import Carousel from "@/src/components/banner/Carousel";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -19,7 +20,7 @@ const Intro = () => {
       </p>
       <p className="text-muted-foreground dark:text-muted-foreground">
         Kami membawa kepada Anda keindahan dan keajaiban Gedongarum melalui
-        kata-kata dan pengalaman yang luar biasa. Mari ikuti kami dalam
+        informasi dan pengalaman yang luar biasa. Mari ikuti kami dalam
         perjalanan untuk mengeksplorasi kekayaan dan pesona tempat ini. Kami
         akan membawa Anda lebih dekat dengan keajaiban alam, sejarah yang
         memikat, dan semua yang membuat Gedongarum begitu istimewa.
@@ -27,6 +28,12 @@ const Intro = () => {
       <p className="text-xl text-foreground/80 dark:text-foreground/80">
         Selamat membaca dan temukan lebih banyak tentang Gedongarum.
       </p>
+      <Link
+        href={"/profil"}
+        className="bg-primary hover:bg-secondary cursor-pointer py-1 px-4 rounded-md text-center text-xl text-white hover:text-foreground transition-all w-fit"
+      >
+        {"Profil Gedongarum >"}
+      </Link>
     </div>
   );
 };

@@ -1,9 +1,14 @@
 import GaleryGrid from "@/src/components/galery/GaleryGrid";
+import { imageData } from "@/src/components/galery/ImageData";
 
 const page = () => {
   return (
     <div>
-      <GaleryGrid itemsPerPage={36} />
+      <GaleryGrid>
+        {imageData.map((image, index) => (
+          <div key={index}>{image}</div>
+        ))}
+      </GaleryGrid>
     </div>
   );
 };
