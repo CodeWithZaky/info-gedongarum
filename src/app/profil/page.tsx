@@ -1,6 +1,7 @@
 const Profil = () => {
   return (
     <div className="flex flex-col items-start gap-3 w-full px-3 text-xs sm:w-[90%] sm:text-sm md:w-[80%] md:text-base lg:text-lg xl:text-xl text-foreground dark:text-foreground">
+      <p className="text-5xl font-semibold mb-2">Desa Gedongarum</p>
       <p className="leading-5 sm:leading-6 md:leading-8">
         Desa “Gedongarum” pada tempo dulu merupakan daerah hutan belantara yang
         terletak di bantaran sungai Bengawan Solo yang banyak ditumbuhi
