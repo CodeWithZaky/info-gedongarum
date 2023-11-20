@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
           <div className="">
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-              Tautan Google
+              Tautan Umum
             </h6>
             <p className="mb-4">
               <a
@@ -74,16 +74,7 @@ const Footer = () => {
                 target="_blank"
                 className="text-muted-foreground dark:text-muted-foreground"
               >
-                Map
-              </a>
-            </p>
-            <p className="mb-4">
-              <a
-                href="https://azaku.vercel.app"
-                target="_blank"
-                className="text-muted-foreground dark:text-muted-foreground"
-              >
-                Pengembang
+                Peta
               </a>
             </p>
             <p className="mb-4">
@@ -95,18 +86,24 @@ const Footer = () => {
                 youtube
               </a>
             </p>
+            <p className="mb-4">
+              <a
+                href="https://azaku.vercel.app"
+                target="_blank"
+                className="text-muted-foreground dark:text-muted-foreground"
+              >
+                Pengembang
+              </a>
+            </p>
           </div>
         </div>
       </div>
 
       <div className=" p-6 text-center dark:text-muted-foreground">
         <span>{"©2023 "}</span>
-        <a
-          className="font-semibold text-muted-foreground dark:text-muted-foreground"
-          href="https://tailwind-elements.com/"
-        >
-          InfoGedongarum
-        </a>
+        <p className="font-semibold text-muted-foreground dark:text-muted-foreground">
+          Gedongarum
+        </p>
       </div>
     </footer>
   );
