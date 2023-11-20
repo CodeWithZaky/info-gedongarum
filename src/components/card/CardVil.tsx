@@ -7,7 +7,10 @@ export default function CardVil() {
   return (
     <>
       {VilData.map((item, index) => (
-        <Card className="w-full md:w-1/3 border border-border" key={index}>
+        <Card
+          className="w-full md:w-1/3 border border-border bg-secondary dark:bg-card"
+          key={index}
+        >
           <CardHeader className="border-b border-separate">
             <CardTitle>{item.title}</CardTitle>
             {/* <CardDescription>
