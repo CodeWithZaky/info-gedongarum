@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col justify-start box-border gap-10">
       <Banner />
-      <div className="flex w-full h-auto flex-col md:flex-row justify-evenly px-10 my-10 gap-3 items-stretch">
+      <div className="flex w-full h-auto flex-col md:flex-row justify-evenly px-5 my-10 gap-3 items-stretch">
         <CardVil />
       </div>
-      <div>
+      <div className="flex flex-col justify-center items-start">
         <GaleryGrid>
           {imageData.slice(0, 6).map((image, index) => (
             <div key={index}>{image}</div>
@@ -21,7 +21,7 @@ export default function Home() {
         </GaleryGrid>
         <Link
           href={"/galeri"}
-          className="mx-5 bg-primary hover:bg-primary/90 hover:text-white w-fit px-3 py-1 rounded-xl cursor-pointer"
+          className="mx-5 bg-primary hover:bg-primary/90 text-white w-fit px-3 py-1 rounded-xl cursor-pointer"
         >
           {"foto lainnya >"}
         </Link>

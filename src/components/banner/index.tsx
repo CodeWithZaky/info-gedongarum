@@ -14,7 +14,7 @@ export default Banner;
 
 const Intro = () => {
   return (
-    <div className="w-full md:w-[50%] px-10 flex flex-col gap-5 font-semibold">
+    <div className="w-full md:w-[50%] pl-5 pr-10 flex flex-col gap-5 font-semibold">
       <p className="text-3xl text-foreground dark:text-foreground">
         Selamat datang di Gedongarum
       </p>
@@ -30,7 +30,7 @@ const Intro = () => {
       </p>
       <Link
         href={"/profil"}
-        className="bg-primary hover:bg-secondary cursor-pointer py-1 px-4 rounded-md text-center text-xl text-white hover:text-foreground transition-all w-fit"
+        className="bg-primary hover:bg-secondary cursor-pointer py-1 px-4 rounded-md text-center text-md sm:text-lg md:text-xl text-white hover:text-foreground transition-all w-fit"
       >
         {"Profil Gedongarum >"}
       </Link>
