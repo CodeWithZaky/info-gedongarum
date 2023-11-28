@@ -12,13 +12,12 @@ const Topbar = () => {
 
   return (
     <nav className="w-full flex justify-between border-b border-border mx-auto px-5 py-4 mb-5">
-      <a
-        href="https://www.google.com/search?q=Desa+Gedongarum%2C+Kecamatan+Kanor%2C+Kabupaten+Bojonegoro%2C+Jawa+Timur%2C+Indonesia&sca_esv=574419571&rlz=1C1KNTJ_enID1078ID1078&sxsrf=AM9HkKn-jMCqUctmah0TcBLyJuB35_ODwg%3A1697627440384&ei=ML0vZYqOF_mnseMP1YiBkAg&ved=0ahUKEwiK5q2Eu_-BAxX5U2wGHVVEAIIQ4dUDCBA&uact=5&oq=Desa+Gedongarum%2C+Kecamatan+Kanor%2C+Kabupaten+Bojonegoro%2C+Jawa+Timur%2C+Indonesia&gs_lp=Egxnd3Mtd2l6LXNlcnAiTURlc2EgR2Vkb25nYXJ1bSwgS2VjYW1hdGFuIEthbm9yLCBLYWJ1cGF0ZW4gQm9qb25lZ29ybywgSmF3YSBUaW11ciwgSW5kb25lc2lhMgoQIRigARjDBBgKSJ3FAlDkB1ibrgJwBXgAkAEBmAG-AqABxRmqAQgwLjE4LjIuMbgBA8gBAPgBAcICBxAjGLACGCfCAgIQJsICBRAAGKIE4gMEGAEgQYgGAQ&sclient=gws-wiz-serp"
-        target="_blank"
+      <Link
+        href="/"
         className="border-2 border-transparent hover:border-primary bg-primary hover:bg-secondary cursor-pointer py-1 px-3 rounded-md text-center text-xl text-white hover:text-foreground transition-all"
       >
         G
-      </a>
+      </Link>
       <ul className="flex justify-center items-center gap-7">
         <MenuTheme />
         {navLinks.map((link) => (
