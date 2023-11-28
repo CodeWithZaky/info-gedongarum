@@ -88,6 +88,15 @@ const Footer = () => {
             </p>
             <p className="mb-4">
               <a
+                href="https://www.google.com/search?q=Desa+Gedongarum%2C+Kecamatan+Kanor%2C+Kabupaten+Bojonegoro%2C+Jawa+Timur%2C+Indonesia&sca_esv=574419571&rlz=1C1KNTJ_enID1078ID1078&sxsrf=AM9HkKn-jMCqUctmah0TcBLyJuB35_ODwg%3A1697627440384&ei=ML0vZYqOF_mnseMP1YiBkAg&ved=0ahUKEwiK5q2Eu_-BAxX5U2wGHVVEAIIQ4dUDCBA&uact=5&oq=Desa+Gedongarum%2C+Kecamatan+Kanor%2C+Kabupaten+Bojonegoro%2C+Jawa+Timur%2C+Indonesia&gs_lp=Egxnd3Mtd2l6LXNlcnAiTURlc2EgR2Vkb25nYXJ1bSwgS2VjYW1hdGFuIEthbm9yLCBLYWJ1cGF0ZW4gQm9qb25lZ29ybywgSmF3YSBUaW11ciwgSW5kb25lc2lhMgoQIRigARjDBBgKSJ3FAlDkB1ibrgJwBXgAkAEBmAG-AqABxRmqAQgwLjE4LjIuMbgBA8gBAPgBAcICBxAjGLACGCfCAgIQJsICBRAAGKIE4gMEGAEgQYgGAQ&sclient=gws-wiz-serp"
+                target="_blank"
+                className="text-muted-foreground dark:text-muted-foreground"
+              >
+                google
+              </a>
+            </p>
+            <p className="mb-4">
+              <a
                 href="https://azaku.vercel.app"
                 target="_blank"
                 className="text-muted-foreground dark:text-muted-foreground"
