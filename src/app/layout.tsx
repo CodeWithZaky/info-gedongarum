@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import clsx from "clsx";
 import AppMainProvider from "@/providers/AppMainProvider";
-import Nav from "@/components/nav";
+import Nav from "@/src/components/nav/page";
 
 const font = Poppins({ subsets: ["latin"], weight: "400" });
 
