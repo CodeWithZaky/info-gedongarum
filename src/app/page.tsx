@@ -1,8 +1,8 @@
-import Banner from "@/src/components/banner";
+import Banner from "@/src/components/banner/page";
 import CardVil from "@/src/components/card/CardVil";
 import GaleryGrid from "@/src/components/galery/GaleryGrid";
-import Footer from "@/src/components/footer";
-import Map from "@/components/map";
+import Footer from "@/src/components/footer/page";
+import Map from "@/src/components/map/page";
 import { imageData } from "../components/galery/ImageData";
 import Link from "next/link";
 
