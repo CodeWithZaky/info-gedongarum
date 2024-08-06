@@ -1,4 +1,20 @@
-# Gedongarum
+# GEDONGARUM
+
+[Visit the website](https://gedongarum.vercel.app/)  
+**Feb 2024 - Jul 2024**  
+**College Project (4th semester)**
+
+### Description
+
+An informational website about the hometown village of the student.
+
+### Technologies
+
+- NEXT JS
+- TAILWIND CSS
+- SHADCN UI
+
+---
 
 Selamat datang di Gedongarum! Kami membawa kepada Anda keindahan dan keajaiban Gedongarum melalui informasi dan pengalaman yang luar biasa. Mari ikuti kami dalam perjalanan untuk mengeksplorasi kekayaan dan pesona tempat ini. Kami akan membawa Anda lebih dekat dengan keajaiban alam, sejarah yang memikat, dan semua yang membuat Gedongarum begitu istimewa. Selamat membaca dan temukan lebih banyak tentang Gedongarum.
 
