@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gedongarum
 
-## Getting Started
+Selamat datang di Gedongarum! Kami membawa kepada Anda keindahan dan keajaiban Gedongarum melalui informasi dan pengalaman yang luar biasa. Mari ikuti kami dalam perjalanan untuk mengeksplorasi kekayaan dan pesona tempat ini. Kami akan membawa Anda lebih dekat dengan keajaiban alam, sejarah yang memikat, dan semua yang membuat Gedongarum begitu istimewa. Selamat membaca dan temukan lebih banyak tentang Gedongarum.
 
-First, run the development server:
+## Navbar
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Beranda](https://gedongarum.vercel.app/)
+- [Profil](https://gedongarum.vercel.app/profil)
+- [Galeri](https://gedongarum.vercel.app/galeri)
+- [Oleh](https://gedongarum.vercel.app/oleh)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Profil Gedongarum
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Gedongarum adalah sebuah desa yang kaya akan budaya dan sejarah, serta memiliki keindahan alam yang mempesona. Dengan berbagai potensi yang dimilikinya, desa ini terus berkembang dan menawarkan berbagai layanan kepada masyarakatnya.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Lembaga
 
-## Learn More
+- **Badan Permusyawaratan Desa**
+- **PKK**
+- **Karang Taruna**
+- **LPMD**
+- **Linmas**
+- **RT-RW**
+- **Kelompok Tani**
+- **Kelompok Informasi Masyarakat**
+- **Badan Usaha Milik Desa**
+- **Perpustakaan Desa**
+- **Badan Amil Zakat**
 
-To learn more about Next.js, take a look at the following resources:
+### Layanan
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Program Petani Mandiri**
+- **Kartu Pedagang Produktif**
+- **Beasiswa**
+- **Penerbitan KTP**
+- **Penerbitan KK**
+- **Pembuatan Akta**
+- **PKH**
+- **BPJS Kesehatan**
+- **Santunan Kematian**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Potensi
 
-## Deploy on Vercel
+- **Bidang Pertanian**
+- **Bidang Pangan**
+- **Bidang Peternakan**
+- **Perikanan**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Peta
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**DESA GEDONGARUM**  
+Jl. Raya Gedongarum No. 107  
+Kecamatan Kanor, Kabupaten Bojonegoro  
+Provinsi Jawa Timur, Kode Pos 62193  
+Email: [desagedongarum@gmail.com](mailto:desagedongarum@gmail.com)
