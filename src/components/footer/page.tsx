@@ -97,7 +97,7 @@ const Footer = () => {
                         </p>
                         <p className="mb-4">
                             <a
-                                href="https://zaky.vercel.app"
+                                href="https://codewithzaky.vercel.app"
                                 target="_blank"
                                 className="text-muted-foreground dark:text-muted-foreground"
                             >
